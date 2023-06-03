@@ -1,0 +1,169 @@
+<script>
+export default {
+  name: 'Card',
+  props: {
+    name: String
+  }
+}
+</script>
+
+<template>
+  <div class="grid-container">
+    <div class="card">
+      <img
+        src="https://www.w3schools.com/howto/img_avatar2.png"
+        alt="Avatar"
+        style="width: 100%"
+      />
+      <div class="container">
+        <h4>
+          <b>{{ name }}</b>
+        </h4>
+      </div>
+    </div>
+    <div class="card">
+      <img
+        src="https://www.w3schools.com/howto/img_avatar2.png"
+        alt="Avatar"
+        style="width: 100%"
+      />
+      <div class="container">
+        <h4>
+          <b>{{ name }}</b>
+        </h4>
+      </div>
+    </div>
+    <div class="card">
+      <img
+        src="https://www.w3schools.com/howto/img_avatar.png"
+        alt="Avatar"
+        style="width: 100%"
+      />
+      <div class="container">
+        <h4>
+          <b>{{ name }}</b>
+        </h4>
+      </div>
+    </div>
+    <div class="card">
+      <img
+        src="https://www.w3schools.com/howto/img_avatar2.png"
+        alt="Avatar"
+        style="width: 100%"
+      />
+      <div class="container">
+        <h4>
+          <b>{{ name }}</b>
+        </h4>
+      </div>
+    </div>
+    <div class="card">
+      <img
+        src="https://www.w3schools.com/howto/img_avatar2.png"
+        alt="Avatar"
+        style="width: 100%"
+      />
+      <div class="container">
+        <h4>
+          <b>{{ name }}</b>
+        </h4>
+      </div>
+    </div>
+    <div class="card">
+      <img
+        src="https://www.w3schools.com/howto/img_avatar2.png"
+        alt="Avatar"
+        style="width: 100%"
+      />
+      <div class="container">
+        <h4>
+          <b>{{ name }}</b>
+        </h4>
+      </div>
+    </div>
+    <div class="card">
+      <img
+        src="https://www.w3schools.com/howto/img_avatar.png"
+        alt="Avatar"
+        style="width: 100%"
+      />
+      <div class="container">
+        <h4>
+          <b>{{ name }}</b>
+        </h4>
+      </div>
+    </div>
+    <div class="card">
+      <img
+        src="https://www.w3schools.com/howto/img_avatar.png"
+        alt="Avatar"
+        style="width: 100%"
+      />
+      <div class="container">
+        <h4>
+          <b>{{ name }}</b>
+        </h4>
+      </div>
+    </div>
+    <div class="card">
+      <img
+        src="https://www.w3schools.com/howto/img_avatar.png"
+        alt="Avatar"
+        style="width: 100%"
+      />
+      <div class="container">
+        <h4>
+          <b>{{ name }}</b>
+        </h4>
+      </div>
+    </div>
+    <div class="card">
+      <img
+        src="https://www.w3schools.com/howto/img_avatar.png"
+        alt="Avatar"
+        style="width: 100%"
+      />
+      <div class="container">
+        <h4>
+          <b>{{ name }}</b>
+        </h4>
+      </div>
+    </div>
+  </div>
+</template>
+
+<!-- Add "scoped" attribute to limit CSS to this component only -->
+<style scoped>
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(225px, 1fr));
+  padding: 50px;
+  padding-top: 40px;
+  column-gap: 0px;
+  row-gap: 40px;
+  justify-items: center;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  border-radius: 5px;
+  /* 5px rounded corners */
+  width: 200px;
+}
+
+/* On mouse-over, add a deeper shadow */
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.5);
+}
+
+/* Add some padding inside the card container */
+.container {
+  padding: 2px 16px;
+}
+
+/* Add rounded corners to the top left and the top right corner of the image */
+img {
+  border-radius: 5px 5px 0 0;
+}
+</style>
