@@ -8,6 +8,7 @@ export default {
 </script>
 
 <template>
+  <link href="https://fonts.googleapis.com/css?family=Eczar" rel="stylesheet" />
   <div class="grid-container">
     <div class="card">
       <img
@@ -107,7 +108,7 @@ export default {
     </div>
     <div class="card">
       <img
-        src="https://www.w3schools.com/howto/img_avatar.png"
+        src="..\assets\Iconic_Valeros.png"
         alt="Avatar"
         style="width: 100%"
       />
@@ -119,15 +120,10 @@ export default {
     </div>
     <div class="card">
       <img
-        src="https://www.w3schools.com/howto/img_avatar.png"
-        alt="Avatar"
-        style="width: 100%"
+        class="card-image"
+        src="https://2e.aonprd.com/Images/Classes/Iconic_Valeros.png"
       />
-      <div class="container">
-        <h4>
-          <b>{{ name }}</b>
-        </h4>
-      </div>
+      <div class="container">Valeros</div>
     </div>
   </div>
 </template>
@@ -150,6 +146,7 @@ export default {
   border-radius: 5px;
   /* 5px rounded corners */
   width: 200px;
+  position: relative;
 }
 
 /* On mouse-over, add a deeper shadow */
@@ -157,9 +154,34 @@ export default {
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.5);
 }
 
+.card-image {
+  position: relative;
+  width: 200px;
+  height: 280px;
+  object-fit: cover;
+  object-position: 50% 0%;
+}
+
 /* Add some padding inside the card container */
 .container {
-  padding: 2px 16px;
+  position: absolute;
+  z-index: 1;
+  bottom: 0;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  text-align: center;
+  background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.25));
+  border-radius: 0 0 5px 5px;
+  font-family: 'Eczar';
+  font-size: 2.5em;
+  font-weight: 900;
+  color: #4e0707;
+  border-color: #efcd98;
+  font-variant: small-caps;
+  text-shadow: 2px 0 #efcd98, -2px 0 #efcd98, 0 2px #efcd98, 0 -2px #efcd98,
+    1px 1px #efcd98, -1px -1px #efcd98, 1px -1px #efcd98, -1px 1px #efcd98;
 }
 
 /* Add rounded corners to the top left and the top right corner of the image */

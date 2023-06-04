@@ -16,6 +16,11 @@ export default {
 </template>
 
 <style>
+@font-face {
+  font-family: 'Eczar';
+  src: local('.fonts/Eczar-Refular.tff'), url() format('truetype');
+}
+
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
