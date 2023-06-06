@@ -1,14 +1,27 @@
 <script>
+import Modal from '@/components/Modal.vue'
 export default {
   name: 'Card',
   props: {
     name: String
+  },
+  components: {
+    Modal
+  },
+  data() {
+    return { counter: 0 }
+  },
+  methods: {
+    greet() {
+      // `this` inside methods points to the current active instance
+      alert(`Hello ${this.name}!`)
+      // `event` is the native DOM event
+    }
   }
 }
 </script>
 
 <template>
-  <link href="https://fonts.googleapis.com/css?family=Eczar" rel="stylesheet" />
   <div class="grid-container">
     <div class="card">
       <img
@@ -72,6 +85,7 @@ export default {
     </div>
     <div class="card">
       <img
+        class="card-image"
         src="https://www.w3schools.com/howto/img_avatar2.png"
         alt="Avatar"
         style="width: 100%"
@@ -96,7 +110,8 @@ export default {
     </div>
     <div class="card">
       <img
-        src="https://www.w3schools.com/howto/img_avatar.png"
+        class="card-image"
+        src="https://i.pinimg.com/originals/d2/76/ff/d276ffe76dc9f561d82413446c93d9ce.png"
         alt="Avatar"
         style="width: 100%"
       />
@@ -106,7 +121,7 @@ export default {
         </h4>
       </div>
     </div>
-    <div class="card">
+    <div class="card" @click="counter++">
       <img
         src="..\assets\Iconic_Valeros.png"
         alt="Avatar"
@@ -114,7 +129,7 @@ export default {
       />
       <div class="container">
         <h4>
-          <b>{{ name }}</b>
+          <b>{{ name }} {{ counter }}</b>
         </h4>
       </div>
     </div>
@@ -122,10 +137,27 @@ export default {
       <img
         class="card-image"
         src="https://2e.aonprd.com/Images/Classes/Iconic_Valeros.png"
+        @click="$refs.modalName.openModal()"
       />
       <div class="container">Valeros</div>
     </div>
   </div>
+
+  <modal ref="modalName">
+    <template v-slot:header>
+      <h1>Modal title</h1>
+    </template>
+
+    <template v-slot:body>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Nunc sed velit
+        dignissim sodales ut eu sem integer vitae. Id aliquet lectus proin nibh
+        nisl condimentum.
+      </p>
+      <img src="https://2e.aonprd.com/Images/Classes/Iconic_Valeros.png" />
+    </template>
+  </modal>
 </template>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->

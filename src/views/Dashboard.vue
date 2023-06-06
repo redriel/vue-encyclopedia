@@ -1,7 +1,7 @@
 <template>
   <!-- <h1>The sidebar is {{ collapsed ? 'closed' : 'open' }}</h1>
   <button @click="toggleSidebar">Toggle Sidebar</button> -->
-  <Card name="Test" />
+  <Card name="Valeros" />
 </template>
 
 <script>
