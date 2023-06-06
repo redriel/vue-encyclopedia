@@ -1,7 +1,11 @@
 <template>
-  <!-- <h1>The sidebar is {{ collapsed ? 'closed' : 'open' }}</h1>
-  <button @click="toggleSidebar">Toggle Sidebar</button> -->
-  <Card name="Valeros" />
+  <Card
+    name="Valeros"
+    description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Nunc sed
+            velit dignissim sodales ut eu sem integer vitae. Id aliquet lectus
+            proin nibh nisl condimentum."
+  />
 </template>
 
 <script>

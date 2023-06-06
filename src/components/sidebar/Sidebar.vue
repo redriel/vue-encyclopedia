@@ -15,17 +15,19 @@ export default {
   <div class="sidebar" :style="{ width: sidebarWidth }">
     <h1>
       <span v-if="collapsed">
-        <div>V</div>
         <div>S</div>
+        <div>E</div>
       </span>
-      <span v-else>Vue Sidebar</span>
+      <span v-else>Sakaar Encyclopedia</span>
     </h1>
 
-    <SidebarLink to="/" icon="fas fa-home">Home</SidebarLink>
-    <SidebarLink to="/dashboard" icon="fas fa-columns">Dashboard</SidebarLink>
-    <SidebarLink to="/analytics" icon="fas fa-chart-bar">Analytics</SidebarLink>
-    <SidebarLink to="/friends" icon="fas fa-users">Friends</SidebarLink>
-    <SidebarLink to="/image" icon="fas fa-image">Images</SidebarLink>
+    <SidebarLink to="/" icon="fas fa-dice-d20">Tutti</SidebarLink>
+    <SidebarLink to="/dashboard" icon="fas fa-users">Personaggi</SidebarLink>
+    <SidebarLink to="/analytics" icon="fas fa-compass">Luoghi</SidebarLink>
+    <SidebarLink to="/friends" icon="fas fa-gem">Oggetti</SidebarLink>
+    <SidebarLink to="/image" icon="fas fa-question-circle">
+      Missioni
+    </SidebarLink>
 
     <span
       class="collapse-icon"
@@ -65,7 +67,8 @@ export default {
 }
 
 .sidebar h1 {
-  height: 2.5em;
+  font-family: Eczar;
+  line-height: 1;
 }
 
 .collapse-icon {

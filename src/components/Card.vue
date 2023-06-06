@@ -3,7 +3,9 @@ import Modal from '@/components/Modal.vue'
 export default {
   name: 'Card',
   props: {
-    name: String
+    name: String,
+    description: String,
+    category: String
   },
   components: {
     Modal
@@ -145,23 +147,52 @@ export default {
 
   <modal ref="modalName">
     <template v-slot:header>
-      <h1>Modal title</h1>
+      {{ name }}
     </template>
 
     <template v-slot:body>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua. Nunc sed velit
-        dignissim sodales ut eu sem integer vitae. Id aliquet lectus proin nibh
-        nisl condimentum.
-      </p>
-      <img src="https://2e.aonprd.com/Images/Classes/Iconic_Valeros.png" />
+      <div class="modal-container">
+        <img
+          class="modal-image"
+          src="https://2e.aonprd.com/Images/Classes/Iconic_Valeros.png"
+        />
+        <div class="modal-text">
+          <p>
+            {{ description }}
+          </p>
+        </div>
+      </div>
     </template>
   </modal>
 </template>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
+.modal-container {
+  padding: 0px 20px 0px;
+  max-width: 640px;
+}
+
+.modal-image {
+  display: inline-block;
+  vertical-align: top;
+  width: 46%;
+  margin: 0px 30px 0 0;
+}
+
+.modal-text {
+  text-align: justify;
+  text-justify: inter-word;
+  font-family: Eczar;
+  line-height: 140%;
+  font-size: 1.1em;
+  display: inline-block;
+  width: 46%;
+  @media (max-width: 620px) {
+    width: 100%;
+  }
+}
+
 .grid-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(225px, 1fr));
