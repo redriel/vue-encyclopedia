@@ -24,126 +24,16 @@ export default {
 </script>
 
 <template>
-  <div class="grid-container">
-    <div class="card">
-      <img
-        src="https://www.w3schools.com/howto/img_avatar2.png"
-        alt="Avatar"
-        style="width: 100%"
-      />
-      <div class="container">
-        <h4>
-          <b>{{ name }}</b>
-        </h4>
-      </div>
-    </div>
-    <div class="card">
-      <img
-        src="https://www.w3schools.com/howto/img_avatar2.png"
-        alt="Avatar"
-        style="width: 100%"
-      />
-      <div class="container">
-        <h4>
-          <b>{{ name }}</b>
-        </h4>
-      </div>
-    </div>
-    <div class="card">
-      <img
-        src="https://www.w3schools.com/howto/img_avatar.png"
-        alt="Avatar"
-        style="width: 100%"
-      />
-      <div class="container">
-        <h4>
-          <b>{{ name }}</b>
-        </h4>
-      </div>
-    </div>
-    <div class="card">
-      <img
-        src="https://www.w3schools.com/howto/img_avatar2.png"
-        alt="Avatar"
-        style="width: 100%"
-      />
-      <div class="container">
-        <h4>
-          <b>{{ name }}</b>
-        </h4>
-      </div>
-    </div>
-    <div class="card">
-      <img
-        src="https://www.w3schools.com/howto/img_avatar2.png"
-        alt="Avatar"
-        style="width: 100%"
-      />
-      <div class="container">
-        <h4>
-          <b>{{ name }}</b>
-        </h4>
-      </div>
-    </div>
-    <div class="card">
-      <img
-        class="card-image"
-        src="https://www.w3schools.com/howto/img_avatar2.png"
-        alt="Avatar"
-        style="width: 100%"
-      />
-      <div class="container">
-        <h4>
-          <b>{{ name }}</b>
-        </h4>
-      </div>
-    </div>
-    <div class="card">
-      <img
-        src="https://www.w3schools.com/howto/img_avatar.png"
-        alt="Avatar"
-        style="width: 100%"
-      />
-      <div class="container">
-        <h4>
-          <b>{{ name }}</b>
-        </h4>
-      </div>
-    </div>
-    <div class="card">
-      <img
-        class="card-image"
-        src="https://i.pinimg.com/originals/d2/76/ff/d276ffe76dc9f561d82413446c93d9ce.png"
-        alt="Avatar"
-        style="width: 100%"
-      />
-      <div class="container">
-        <h4>
-          <b>{{ name }}</b>
-        </h4>
-      </div>
-    </div>
-    <div class="card" @click="counter++">
-      <img
-        src="..\assets\Iconic_Valeros.png"
-        alt="Avatar"
-        style="width: 100%"
-      />
-      <div class="container">
-        <h4>
-          <b>{{ name }} {{ counter }}</b>
-        </h4>
-      </div>
-    </div>
-    <div class="card">
-      <img
-        class="card-image"
-        src="https://2e.aonprd.com/Images/Classes/Iconic_Valeros.png"
-        @click="$refs.modalName.openModal()"
-      />
-      <div class="container">Valeros</div>
-    </div>
+  <!-- <div class="grid-container"> -->
+  <div class="card">
+    <img
+      class="card-image"
+      src="https://2e.aonprd.com/Images/Classes/Iconic_Valeros.png"
+      @click="$refs.modalName.openModal()"
+    />
+    <div class="container">{{ name }}</div>
   </div>
+  <!-- </div> -->
 
   <modal ref="modalName">
     <template v-slot:header>

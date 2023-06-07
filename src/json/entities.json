@@ -1,0 +1,57 @@
+[
+    {
+        "id": 1,
+        "name":"Valeros",
+        "description":"Un coraggioso guerriero",
+        "image":"",
+        "category":"character"
+    },
+    {
+        "id": 2,
+        "name":"Ezren",
+        "description":"Un mago saggio",
+        "image":"",
+        "category":"character"
+    },
+    {
+        "id": 1,
+        "name":"Ogma",
+        "description":"Un coraggioso guerriero",
+        "image":"",
+        "category":"character"
+    },
+    {
+        "id": 2,
+        "name":"Carmida",
+        "description":"Un mago saggio",
+        "image":"",
+        "category":"area"
+    },
+    {
+        "id": 1,
+        "name":"Valeros",
+        "description":"Un coraggioso guerriero",
+        "image":"",
+        "category":"character"
+    },
+    {
+        "id": 2,
+        "name":"Ezren",
+        "description":"Un mago saggio",
+        "image":"",
+        "category":"character"
+    },{
+        "id": 1,
+        "name":"Valeros",
+        "description":"Un coraggioso guerriero",
+        "image":"",
+        "category":"character"
+    },
+    {
+        "id": 2,
+        "name":"Ezren",
+        "description":"Un mago saggio",
+        "image":"",
+        "category":"character"
+    }
+]
