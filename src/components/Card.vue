@@ -95,6 +95,7 @@ console.log(this)
   border-width: 2px;
   /* 5px rounded corners */
   width: 200px;
+  height: 300px;
   position: relative;
 }
 
@@ -104,11 +105,14 @@ console.log(this)
 }
 
 .card-image {
-  position: relative;
+  position: center;
+  height: 325px;
+  max-width: 100%;
   width: 200px;
-  height: fit-content;
+  max-height: 100%;
   object-fit: cover;
   object-position: 50% 0%;
+  border-radius: 5px;
 }
 
 /* Add some padding inside the card container */
@@ -122,7 +126,7 @@ console.log(this)
   right: 0;
   text-align: center;
   background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.25));
-  border-radius: 0 0 5px 5px;
+  /* border-radius: 0 0 5px 5px; */
   font-family: 'Eczar';
   font-size: 2.5em;
   font-weight: 900;
@@ -135,6 +139,6 @@ console.log(this)
 
 /* Add rounded corners to the top left and the top right corner of the image */
 img {
-  border-radius: 5px 5px 0 0;
+  border-radius: 0px 0px 0 0;
 }
 </style>

@@ -10,7 +10,7 @@
         "id": 2,
         "name":"Ezren",
         "description":"Un mago saggio",
-        "image":"../assets/Ezren.webp",
+        "image":"https://cdn.paizo.com/image/content/PathfinderRPG/20190312-Ezren.jpg",
         "category":"character"
     },
     {
@@ -38,7 +38,7 @@
         "id": 6,
         "name":"Ezren",
         "description":"Un mago saggio",
-        "image":"https://cdn.paizo.com/image/content/PathfinderRPG/20190514-Valeros.jpg",
+        "image":"https://cdn.paizo.com/image/content/PathfinderRPG/20190312-Ezren.jpg",
         "category":"character"
     },{
         "id": 7,

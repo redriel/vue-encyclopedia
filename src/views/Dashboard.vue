@@ -34,7 +34,7 @@ export default {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(225px, 1fr));
   padding: 50px;
-  padding-top: 40px;
+  padding-top: 20px;
   column-gap: 0px;
   row-gap: 40px;
   justify-items: center;
