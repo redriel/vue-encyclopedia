@@ -1,7 +1,7 @@
 [
     {
         "id": 1,
-        "name":"Valeros",
+        "name":"Caterina",
         "description":"Un coraggioso guerriero",
         "image":"https://cdn.paizo.com/image/content/PathfinderRPG/20190514-Valeros.jpg",
         "category":"character"
@@ -49,9 +49,9 @@
     },
     {
         "id": 8,
-        "name":"Ezren",
+        "name":"Torino",
         "description":"Un mago saggio",
         "image":"https://cdn.paizo.com/image/content/PathfinderRPG/20190514-Valeros.jpg",
-        "category":"character"
+        "category":"area"
     }
 ]

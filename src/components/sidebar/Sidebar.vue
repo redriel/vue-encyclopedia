@@ -1,10 +1,11 @@
 <script>
 import SidebarLink from './SidebarLink'
+import Searchbar from '@/components/Searchbar.vue'
 import { collapsed, toggleSidebar, sidebarWidth } from './state'
 
 export default {
   props: {},
-  components: { SidebarLink },
+  components: { SidebarLink, Searchbar },
   setup() {
     return { collapsed, toggleSidebar, sidebarWidth }
   }
@@ -12,30 +13,33 @@ export default {
 </script>
 
 <template>
-  <div class="sidebar" :style="{ width: sidebarWidth }">
-    <h1>
-      <span v-if="collapsed">
-        <div>S</div>
-        <div>E</div>
+  <div class="container">
+    <div class="sidebar" :style="{ width: sidebarWidth }">
+      <h1>
+        <span v-if="collapsed">
+          <div>S</div>
+          <div>E</div>
+        </span>
+        <span v-else>Sakaar Encyclopedia</span>
+      </h1>
+
+      <SidebarLink to="/" icon="fas fa-dice-d20">Tutti</SidebarLink>
+      <SidebarLink to="/dashboard" icon="fas fa-users">Personaggi</SidebarLink>
+      <SidebarLink to="/analytics" icon="fas fa-compass">Luoghi</SidebarLink>
+      <SidebarLink to="/friends" icon="fas fa-gem">Oggetti</SidebarLink>
+      <SidebarLink to="/image" icon="fas fa-question-circle">
+        Missioni
+      </SidebarLink>
+
+      <span
+        class="collapse-icon"
+        :class="{ 'rotate-180': collapsed }"
+        @click="toggleSidebar"
+      >
+        <i class="fas fa-angle-double-left" />
       </span>
-      <span v-else>Sakaar Encyclopedia</span>
-    </h1>
-
-    <SidebarLink to="/" icon="fas fa-dice-d20">Tutti</SidebarLink>
-    <SidebarLink to="/dashboard" icon="fas fa-users">Personaggi</SidebarLink>
-    <SidebarLink to="/analytics" icon="fas fa-compass">Luoghi</SidebarLink>
-    <SidebarLink to="/friends" icon="fas fa-gem">Oggetti</SidebarLink>
-    <SidebarLink to="/image" icon="fas fa-question-circle">
-      Missioni
-    </SidebarLink>
-
-    <span
-      class="collapse-icon"
-      :class="{ 'rotate-180': collapsed }"
-      @click="toggleSidebar"
-    >
-      <i class="fas fa-angle-double-left" />
-    </span>
+    </div>
+    <Searchbar></Searchbar>
   </div>
 </template>
 
@@ -59,11 +63,12 @@ export default {
   left: 0;
   bottom: 0;
   padding: 0.5em;
-
+  overflow: hidden;
   transition: 0.3s ease;
 
   display: flex;
   flex-direction: column;
+  z-index: 3;
 }
 
 .sidebar h1 {
@@ -84,5 +89,13 @@ export default {
 .rotate-180 {
   transform: rotate(180deg);
   transition: 0.2s linear;
+}
+
+.container {
+  position: fixed;
+  left: 30;
+  padding: 0;
+  margin: 0;
+  z-index: 1;
 }
 </style>

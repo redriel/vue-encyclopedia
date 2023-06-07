@@ -105,6 +105,7 @@ console.log(this)
 }
 
 .card-image {
+  z-index: 99;
   position: center;
   height: 325px;
   max-width: 100%;
@@ -118,7 +119,6 @@ console.log(this)
 /* Add some padding inside the card container */
 .container {
   position: absolute;
-  z-index: 1;
   bottom: 0;
   margin-left: auto;
   margin-right: auto;
