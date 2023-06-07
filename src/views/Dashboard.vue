@@ -23,6 +23,7 @@ export default {
       v-for="entity in filteredEntities"
       :key="entity.id"
       :name="entity.name"
+      :image="entity.image"
       :description="entity.description"
     />
   </div>

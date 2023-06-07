@@ -3,55 +3,55 @@
         "id": 1,
         "name":"Valeros",
         "description":"Un coraggioso guerriero",
-        "image":"",
+        "image":"https://cdn.paizo.com/image/content/PathfinderRPG/20190514-Valeros.jpg",
         "category":"character"
     },
     {
         "id": 2,
         "name":"Ezren",
         "description":"Un mago saggio",
-        "image":"",
+        "image":"../assets/Ezren.webp",
         "category":"character"
     },
     {
-        "id": 1,
+        "id": 3,
         "name":"Ogma",
         "description":"Un coraggioso guerriero",
-        "image":"",
+        "image":"https://cdn.paizo.com/image/content/PathfinderRPG/20190514-Valeros.jpg",
         "category":"character"
     },
     {
-        "id": 2,
+        "id": 4,
         "name":"Carmida",
         "description":"Un mago saggio",
-        "image":"",
+        "image":"https://cdn.paizo.com/image/content/PathfinderRPG/20190514-Valeros.jpg",
         "category":"area"
     },
     {
-        "id": 1,
+        "id": 5,
         "name":"Valeros",
         "description":"Un coraggioso guerriero",
-        "image":"",
+        "image":"https://cdn.paizo.com/image/content/PathfinderRPG/20190514-Valeros.jpg",
         "category":"character"
     },
     {
-        "id": 2,
+        "id": 6,
         "name":"Ezren",
         "description":"Un mago saggio",
-        "image":"",
+        "image":"https://cdn.paizo.com/image/content/PathfinderRPG/20190514-Valeros.jpg",
         "category":"character"
     },{
-        "id": 1,
+        "id": 7,
         "name":"Valeros",
         "description":"Un coraggioso guerriero",
-        "image":"",
+        "image":"https://cdn.paizo.com/image/content/PathfinderRPG/20190514-Valeros.jpg",
         "category":"character"
     },
     {
-        "id": 2,
+        "id": 8,
         "name":"Ezren",
         "description":"Un mago saggio",
-        "image":"",
+        "image":"https://cdn.paizo.com/image/content/PathfinderRPG/20190514-Valeros.jpg",
         "category":"character"
     }
 ]

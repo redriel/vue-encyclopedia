@@ -5,13 +5,11 @@ export default {
   props: {
     name: String,
     description: String,
+    image: String,
     category: String
   },
   components: {
     Modal
-  },
-  data() {
-    return { counter: 0 }
   },
   methods: {
     greet() {
@@ -21,16 +19,14 @@ export default {
     }
   }
 }
+console.log(this)
 </script>
 
 <template>
-  <!-- <div class="grid-container"> -->
+  <!-- <div class="grid-container"> 
+        <img class="card-image" :src="require(`../assets/${image}`)" />-->
   <div class="card">
-    <img
-      class="card-image"
-      src="https://2e.aonprd.com/Images/Classes/Iconic_Valeros.png"
-      @click="$refs.modalName.openModal()"
-    />
+    <img class="card-image" :src="image" @click="$refs.modalName.openModal()" />
     <div class="container">{{ name }}</div>
   </div>
   <!-- </div> -->
@@ -42,10 +38,7 @@ export default {
 
     <template v-slot:body>
       <div class="modal-container">
-        <img
-          class="modal-image"
-          src="https://2e.aonprd.com/Images/Classes/Iconic_Valeros.png"
-        />
+        <img class="modal-image" :src="image" />
         <div class="modal-text">
           <p>
             {{ description }}
@@ -97,6 +90,9 @@ export default {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   transition: 0.3s;
   border-radius: 5px;
+  border-color: #58180d;
+  border-style: solid;
+  border-width: 2px;
   /* 5px rounded corners */
   width: 200px;
   position: relative;
@@ -110,7 +106,7 @@ export default {
 .card-image {
   position: relative;
   width: 200px;
-  height: 280px;
+  height: fit-content;
   object-fit: cover;
   object-position: 50% 0%;
 }
@@ -130,7 +126,7 @@ export default {
   font-family: 'Eczar';
   font-size: 2.5em;
   font-weight: 900;
-  color: #4e0707;
+  color: #5e0000;
   border-color: #efcd98;
   font-variant: small-caps;
   text-shadow: 2px 0 #efcd98, -2px 0 #efcd98, 0 2px #efcd98, 0 -2px #efcd98,
