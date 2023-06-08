@@ -102,6 +102,7 @@ export default {
   object-fit: cover;
   object-position: 50% 0%;
   border-radius: 5px;
+  background-color: white;
 }
 
 .container {
