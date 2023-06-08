@@ -17,7 +17,9 @@ export default {
 <template>
   <div class="card">
     <img class="card-image" :src="image" @click="$refs.modalName.openModal()" />
-    <div class="container">{{ name }}</div>
+    <div class="container">
+      <div class="card-text">{{ name }}</div>
+    </div>
   </div>
 
   <modal ref="modalName">
@@ -120,5 +122,10 @@ export default {
   font-variant: small-caps;
   text-shadow: 2px 0 #efcd98, -2px 0 #efcd98, 0 2px #efcd98, 0 -2px #efcd98,
     1px 1px #efcd98, -1px -1px #efcd98, 1px -1px #efcd98, -1px 1px #efcd98;
+  line-height: 90%;
+}
+
+.card-text {
+  bottom: 30px !important;
 }
 </style>

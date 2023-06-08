@@ -1,57 +1,117 @@
 [
     {
         "id": 1,
-        "name":"Caterina",
-        "description":"Un coraggioso guerriero",
-        "image":"https://cdn.paizo.com/image/content/PathfinderRPG/20190514-Valeros.jpg",
+        "name":"Duca Gramont",
+        "description":"Alfred Gramont è il duca di Astalia. È un uomo vecchio, dalla memoria caduce, ma è anche il tassello fondamentale della missione dei Cavalieri di Sakaar.",
+        "image":"https://i.ibb.co/nkGwkJb/duca-gramont.jpg",
         "category":"character"
     },
     {
         "id": 2,
-        "name":"Ezren",
-        "description":"Un mago saggio",
-        "image":"https://cdn.paizo.com/image/content/PathfinderRPG/20190312-Ezren.jpg",
+        "name":"Leroy Wagner",
+        "description":"Feldmaresciallo del Ducato e fedelissimo di Lord Gramont. Un cavaliere all'antica e grande stratega.",
+        "image":"https://i.ibb.co/sRRjP5N/Fighter.png",
         "category":"character"
     },
     {
         "id": 3,
-        "name":"Ogma",
-        "description":"Un coraggioso guerriero",
-        "image":"https://cdn.paizo.com/image/content/PathfinderRPG/20190514-Valeros.jpg",
+        "name":"Noel Fouriè",
+        "description":"Ingegner-mago della corte ducale ed inventore del Tonitrus. Un genio conosciuto anche nel continente e il più grande maestro dell'eterlid.",
+        "image":"https://i.ibb.co/p42NMyD/wkQYdjz.png",
         "category":"character"
     },
     {
         "id": 4,
-        "name":"Carmida",
-        "description":"Un mago saggio",
-        "image":"https://cdn.paizo.com/image/content/PathfinderRPG/20190514-Valeros.jpg",
-        "category":"area"
+        "name":"Alexander Maslow",
+        "description":"Enigmatico nobile che vive a Odestel. È un esperto alchimista ed esperto di esoterismo. Sembra nasconda innumerevoli segreti ed è sempre informato su tutti.",
+        "image":"https://i.ibb.co/fG6ByZL/art-24.png",
+        "category":"character"
     },
     {
         "id": 5,
-        "name":"Valeros",
-        "description":"Un coraggioso guerriero",
-        "image":"https://cdn.paizo.com/image/content/PathfinderRPG/20190514-Valeros.jpg",
+        "name":"Filippe de Varl",
+        "description":"Governatore di Lantissa ed oppositore della Chiesa. Tende ad escludersi dal gioco politico astaliano ma è noto che nutra forti antipatie per il Barone Utgar.",
+        "image":"https://i.ibb.co/PN00rD4/de-varl.png",
         "category":"character"
     },
     {
         "id": 6,
-        "name":"Ezren",
-        "description":"Un mago saggio",
-        "image":"https://cdn.paizo.com/image/content/PathfinderRPG/20190312-Ezren.jpg",
+        "name":"Morgan Ortega",
+        "description":"Maestro spia di Laroche, vive sotto copertura in Astalia da più di 10 anni. Una vera e propria leggenda nel suo campo, Morgan è un tipo terribilmente schietto che punta sempre a percorrere la strada più breve per raggiungere l'obiettivo.",
+        "image":"https://i.ibb.co/9wLs21x/bvxtiab8pli31.jpg",
         "category":"character"
     },{
         "id": 7,
-        "name":"Valeros",
-        "description":"Un coraggioso guerriero",
-        "image":"https://cdn.paizo.com/image/content/PathfinderRPG/20190514-Valeros.jpg",
+        "name":"Skip",
+        "description":"Il braccio destro di Morgan. Skip è stata salvata dalla schiavitù da Laroche in persona, e ripaga il suo debito offrendo i suoi servizi come spia. È in grado di scomparire alla vista a piacimento.",
+        "image":"https://i.ibb.co/JBBbD0n/skip.jpg",
         "category":"character"
     },
     {
         "id": 8,
-        "name":"Torino",
-        "description":"Un mago saggio",
-        "image":"https://cdn.paizo.com/image/content/PathfinderRPG/20190514-Valeros.jpg",
+        "name":"Theovald Gramont",
+        "description":"Secondogenito del Duca, è scomparso dalla circolazione circa 2 anni prima dei giorni correnti. Era un uomo dissoluto ma amato dai suoi seguaci, capace di grande lucidità ed abile al comando.",
+        "image":"https://i.pinimg.com/564x/b2/cc/fd/b2ccfdf267b892b0a4da1ac0ce02b1d6.jpg",
+        "category":"character"
+    },
+    {
+        "id": 9,
+        "name":"Ulrich Gramont",
+        "description":"Il primogenito del Duca, è scomparso dalla circolazione circa 6 mesi prima dei giorni correnti. Un uomo ricco, viziato, dispotico ed insopportabile. Sono in molti a rallegrarsi della sua scomparsa.",
+        "image":"https://i.pinimg.com/originals/b1/8e/06/b18e064541cef89184f1311b0fffe8c5.png",
+        "category":"character"
+    },
+    {
+        "id": 10,
+        "name":"Ludwig Utgar",
+        "description":"Cugino di primo grado del Duca e Barona della landa di Utgar. Ludwig è un uomo terribilmente carismatico, intelligente e capace, e da anni sta muovendo i fili di una rivoluzione silenziosa ed inarrestabile.",
+        "image":"https://i.ibb.co/GFDtjGX/art-21.png",
+        "category":"character"
+    },
+    {
+        "id": 11,
+        "name":"Marchese Laroche",
+        "description":"Tristan Laroche è un uomo indecifrabile. Dotato di un genio purissimo e di una ambizione smisurata, muove le sue pedine su una scacchiera grande quanto il monto intero. Dietro la sua figura da comandante e freddo diplomatico si nasconde tuttavia un uomo caritatevole, dedito ai suoi sudditi e sempre pronto a schierarsi dalla parte dei suoi sottoposti.",
+        "image":"https://cdnb.artstation.com/p/assets/images/images/001/899/239/large/jiyeon-ryu-.jpg?1454420833",
+        "category":"character"
+    },
+    {
+        "id": 12,
+        "name":"Decadron",
+        "description":"La pagina dorata del Libro del Mondo, che secondo la leggenda riporta la strada per raggiungere la Torre di Santa Eloisa.",
+        "image":"https://i.ibb.co/Jq0fR8s/D1e-BYe-V4-AEf6-EN.png",
+        "category":"item"
+    },{
+        "id": 13,
+        "name":"Occhio Appeso",
+        "description":"Un mistero vivente. Agor lei, ich nole.",
+        "image":"https://i.ibb.co/CMQn53M/Hooded-jedi.png",
+        "category":"character"
+    },
+    {
+        "id": 14,
+        "name":"Forte Utgar",
+        "description":"La fortezza impenetrabile del Barone Ludwig. Si dice che il Barone non abbandoni la fortezza da più di 10 anni.",
+        "image":"https://i.pinimg.com/736x/52/92/cb/5292cbd31ccf3788f7fed0e15ba4e422--fantasy-illustration-inspirational-artwork.jpg",
         "category":"area"
+    },
+    {
+        "id": 15,
+        "name":"Torre di Santa Eloisa",
+        "description":"Torre mai trovata dagli storici, si dice contenga la salma di Santa Eloisa, che tra le mani custodisce la mappa per l'Ultima Porta, il luogo dove l'Unico risiede.",
+        "image":"https://w0.peakpx.com/wallpaper/318/848/HD-wallpaper-fantasy-tower-rocks-stones-art.jpg",
+        "category":"area"
+    },{
+        "id": 16,
+        "name":"Tonitrus",
+        "description":"Una torre magica inventata da Noel Fouriè, è in grado di trasmettere ed inviare messaggi chiamati Ottagrammi, contenenti fino ad 8 parole, in poco meno di 1 giorno.",
+        "image":"https://external-preview.redd.it/LW3IJ-doWpPn2FjphBYIfayI2uuIx-l3YuX92qARd20.jpg?auto=webp&v=enabled&s=e2b0545da3c5cd5f6a3cda4b2b5abc320ca91ae4",
+        "category":"area"
+    },{
+        "id": 16,
+        "name":"Glifo",
+        "description":"Un oggetto magico creato dal Trafiggi-Bestie, un druido capace di plasmare l'eterlid a piacimento.",
+        "image":"https://i.ibb.co/rQBMMVy/Gwent-cardart-scoiatael-runestone-morana.png",
+        "category":"item"
     }
 ]
