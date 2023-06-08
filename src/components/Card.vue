@@ -10,26 +10,15 @@ export default {
   },
   components: {
     Modal
-  },
-  methods: {
-    greet() {
-      // `this` inside methods points to the current active instance
-      alert(`Hello ${this.name}!`)
-      // `event` is the native DOM event
-    }
   }
 }
-console.log(this)
 </script>
 
 <template>
-  <!-- <div class="grid-container"> 
-        <img class="card-image" :src="require(`../assets/${image}`)" />-->
   <div class="card">
     <img class="card-image" :src="image" @click="$refs.modalName.openModal()" />
     <div class="container">{{ name }}</div>
   </div>
-  <!-- </div> -->
 
   <modal ref="modalName">
     <template v-slot:header>
@@ -49,7 +38,6 @@ console.log(this)
   </modal>
 </template>
 
-<!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 .modal-container {
   padding: 0px 20px 0px;
@@ -93,13 +81,11 @@ console.log(this)
   border-color: #58180d;
   border-style: solid;
   border-width: 2px;
-  /* 5px rounded corners */
   width: 200px;
   height: 300px;
   position: relative;
 }
 
-/* On mouse-over, add a deeper shadow */
 .card:hover {
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.5);
 }
@@ -116,7 +102,6 @@ console.log(this)
   border-radius: 5px;
 }
 
-/* Add some padding inside the card container */
 .container {
   position: absolute;
   bottom: 0;
@@ -135,10 +120,5 @@ console.log(this)
   font-variant: small-caps;
   text-shadow: 2px 0 #efcd98, -2px 0 #efcd98, 0 2px #efcd98, 0 -2px #efcd98,
     1px 1px #efcd98, -1px -1px #efcd98, 1px -1px #efcd98, -1px 1px #efcd98;
-}
-
-/* Add rounded corners to the top left and the top right corner of the image */
-img {
-  border-radius: 0px 0px 0 0;
 }
 </style>

@@ -1,7 +1,6 @@
-// store.js
 import { reactive } from 'vue'
 
-export const store = reactive({
+export const searchbarState = reactive({
   input: '',
   setValue(input) {
     this.input = input

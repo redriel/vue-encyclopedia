@@ -3,11 +3,9 @@ import {
   collapsed,
   toggleSidebar,
   sidebarWidth
-} from '../components/sidebar/state'
+} from '@/components/sidebar/sidebarState'
 
-import { store } from './store.js'
-
-// import entities from '../json/entities.json'
+import { searchbarState } from './searchbarState'
 
 export default {
   setup() {
@@ -19,15 +17,10 @@ export default {
   },
   data() {
     return {
-      store
+      searchbarState
     }
   }
 }
-
-// function searchFunction(inputValue) {
-//   console.log(inputValue)
-// }
-//searchFunction(searchInput)
 </script>
 
 <template>
@@ -36,7 +29,7 @@ export default {
     :style="{ left: sidebarWidth }"
     type="text"
     v-model="searchInput"
-    @input="store.setValue(searchInput)"
+    @input="searchbarState.setValue(searchInput)"
     placeholder="Cerca personaggi, luoghi, oggetti..."
   />
 </template>

@@ -8,14 +8,24 @@ const routes = [
     component: Home
   },
   {
-    path: '/dashboard',
-    name: 'Dashboard',
-    component: () => import('../views/Dashboard.vue')
+    path: '/characters',
+    name: 'Characters',
+    component: () => import('../views/Characters.vue')
   },
   {
-    path: '/about',
-    name: 'About',
-    component: () => import('../views/About.vue')
+    path: '/areas',
+    name: 'Areas',
+    component: () => import('../views/Areas.vue')
+  },
+  {
+    path: '/items',
+    name: 'Items',
+    component: () => import('../views/Items.vue')
+  },
+  {
+    path: '/quests',
+    name: 'Quests',
+    component: () => import('../views/Quests.vue')
   }
 ]
 

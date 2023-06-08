@@ -1,7 +1,7 @@
 <script>
 import { collapsed, toggleSidebar } from '@/components/sidebar/sidebarState'
 import Card from '@/components/Card.vue'
-import { searchbarState } from '@/components/searchbar/searchbarState'
+import { searchbarState } from '@/components/searchbar/searchbarState.js'
 import entities from '../json/entities.json'
 
 let filteredCharacters = entities
@@ -22,8 +22,10 @@ export default {
     filteredCharactersUpdate() {
       let input = searchbarState.getInput()
       console.log(filteredCharacters)
-      filteredCharacters = entities.filter((entity) =>
-        entity.name.toLowerCase().includes(input.toLowerCase())
+      filteredCharacters = entities.filter(
+        (entity) =>
+          entity.category == 'quest' &&
+          entity.name.toLowerCase().includes(input.toLowerCase())
       )
       return filteredCharacters
     }

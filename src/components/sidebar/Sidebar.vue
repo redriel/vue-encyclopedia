@@ -1,7 +1,7 @@
 <script>
 import SidebarLink from './SidebarLink'
-import Searchbar from '@/components/Searchbar.vue'
-import { collapsed, toggleSidebar, sidebarWidth } from './state'
+import Searchbar from '@/components/searchbar/Searchbar.vue'
+import { collapsed, toggleSidebar, sidebarWidth } from './sidebarState'
 
 export default {
   props: {},
@@ -24,10 +24,10 @@ export default {
       </h1>
 
       <SidebarLink to="/" icon="fas fa-dice-d20">Tutti</SidebarLink>
-      <SidebarLink to="/dashboard" icon="fas fa-users">Personaggi</SidebarLink>
-      <SidebarLink to="/analytics" icon="fas fa-compass">Luoghi</SidebarLink>
-      <SidebarLink to="/friends" icon="fas fa-gem">Oggetti</SidebarLink>
-      <SidebarLink to="/image" icon="fas fa-question-circle">
+      <SidebarLink to="/characters" icon="fas fa-users">Personaggi</SidebarLink>
+      <SidebarLink to="/areas" icon="fas fa-compass">Luoghi</SidebarLink>
+      <SidebarLink to="/items" icon="fas fa-gem">Oggetti</SidebarLink>
+      <SidebarLink to="/quests" icon="fas fa-question-circle">
         Missioni
       </SidebarLink>
 

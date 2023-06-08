@@ -1,10 +1,7 @@
 <script>
-import { collapsed, toggleSidebar } from '@/components/sidebar/state'
-
+import { collapsed, toggleSidebar } from '@/components/sidebar/sidebarState'
 import Card from '@/components/Card.vue'
-
-import { store } from '@/components/store.js'
-
+import { searchbarState } from '@/components/searchbar/searchbarState.js'
 import entities from '../json/entities.json'
 
 let filteredCharacters = entities
@@ -18,29 +15,12 @@ export default {
   },
   data() {
     return {
-      store
-    }
-  },
-  watch: {
-    store: {
-      deep: true,
-      handler: function filteredCharactersUpdate2(store) {
-        let input = store.getInput()
-        console.log(filteredCharacters)
-        filteredCharacters = entities.filter(
-          (entity) =>
-            entity.category == 'character' &&
-            entity.name.toLowerCase().includes(input.toLowerCase())
-        )
-        console.log(input)
-        console.log(filteredCharacters)
-        return filteredCharacters
-      }
+      searchbarState
     }
   },
   computed: {
-    filteredCharactersUpdate1() {
-      let input = store.getInput()
+    filteredCharactersUpdate() {
+      let input = searchbarState.getInput()
       console.log(filteredCharacters)
       filteredCharacters = entities.filter(
         (entity) =>
@@ -51,22 +31,12 @@ export default {
     }
   }
 }
-
-// function filters(input) {
-//   filteredCharacters = entities.filter(
-//     (entity) =>
-//       entity.category == 'character' && entity.name.toLowerCase() == input
-//   )
-//   return filteredCharacters
-// }
-
-console.log(store.getInput())
 </script>
 
 <template>
   <div class="grid-container">
     <Card
-      v-for="entity in filteredCharactersUpdate1"
+      v-for="entity in filteredCharactersUpdate"
       :key="entity.id"
       :name="entity.name"
       :image="entity.image"
